@@ -17,7 +17,7 @@ if n == 2:
 if n == 3: 
     print("토끼 그림")
 # 잘못 입력하면 잘못 입력했다고 출력
-elif:
+else:
     print("잘못 입력")
 
 def print_ascii_art(option):
