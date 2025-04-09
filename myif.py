@@ -1,5 +1,3 @@
-# 아스키 코드 그림 출력하기
-
 print("그림 출력 프로그램")
 print("============================")
 print("1. 고양이")
@@ -11,10 +9,10 @@ n = int(input("선택: "))
 if n == 1: 
     print("고양이 그림")
 # 만약에 2를 입력하면 2번 캐릭터 출력
-if n == 2: 
+elif n == 2: 
     print("강아지 그림")
 # 3을 입력하면 3번 캐릭터 출력
-if n == 3: 
+elif n == 3: 
     print("토끼 그림")
 # 잘못 입력하면 잘못 입력했다고 출력
 else:
@@ -52,8 +50,23 @@ try:
     print_ascii_art(user_input)
 except ValueError:
     print("잘못 입력했습니다")
+    user_input = 0  # 오류가 나면 기본값 0으로 설정
 
-# 동물 그림 출력 프로그램이 총 5번 반복 실행될 수 있게 만드시오.
+def play(option):
+    print("선택한 그림 반복 출력")
+    print_ascii_art(option)
 
-# 위 프로그램을 완성한한 사람은 프로그램이 계속(무한)반복하게 하고
-# 만약에 0을 입력하면 종료되는 프로그램을 만드시오.
+print("5번 출력 프로그램 시작")
+for i in range(5):
+    play(user_input)
+print("5번 출력 프로그램 종료")
+
+print("0을 입력하면 종료 프로그램 시작 ")
+while True:
+    try:
+        command = int(input("숫자를 입력하세요 (0 입력 시 종료): "))
+        if command == 0:
+            break
+    except ValueError:
+        print("숫자를 입력해주세요.")
+print("0을 입력하면 종료 프로그램 종료 ")
