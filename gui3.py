@@ -52,26 +52,26 @@ photo_image = None
 button_frame = tk.Frame(window)
 button_frame.pack(pady=10) # 상단에 여백을 주고 프레임 배치
 
-# 강아지 버튼 생성
+# 손성빈 버튼 생성
 # command=lambda: show_image('dog') -> 버튼 클릭 시 show_image 함수에 'dog' 인자를 전달
-dog_button = tk.Button(button_frame, text="강아지", width=10, command=lambda: show_image('dog'))
-dog_button.pack(side=tk.LEFT, padx=5) # 프레임 왼쪽에 배치, 좌우 여백
+손성빈_button = tk.Button(button_frame, text="손성빈", width=10, command=lambda: show_image('손성빈'))
+손성빈_button.pack(side=tk.LEFT, padx=5) # 프레임 왼쪽에 배치, 좌우 여백
 
-# 고양이 버튼 생성
-cat_button = tk.Button(button_frame, text="고양이", width=10, command=lambda: show_image('cat'))
-cat_button.pack(side=tk.LEFT, padx=5) # 프레임 왼쪽에 배치, 좌우 여백
+# 박준우 버튼 생성
+박준우_button = tk.Button(button_frame, text="박준우", width=10, command=lambda: show_image('박준우'))
+박준우_button.pack(side=tk.LEFT, padx=5) # 프레임 왼쪽에 배치, 좌우 여백
 
-# 토끼 버튼 생성
-rabbit_button = tk.Button(button_frame, text="토끼", width=10, command=lambda: show_image('rabbit'))
-rabbit_button.pack(side=tk.LEFT, padx=5) # 프레임 왼쪽에 배치, 좌우 여백
+# 윤동희 버튼 생성
+윤동희_button = tk.Button(button_frame, text="윤동희", width=10, command=lambda: show_image('윤동희'))
+윤동희_button.pack(side=tk.LEFT, padx=5) # 프레임 왼쪽에 배치, 좌우 여백
 
-# 햄스터 버튼 생성
-hamster_button = tk.Button(button_frame, text="햄스터", width=10, command=lambda: show_image('hamster'))
-hamster_button.pack(side=tk.LEFT, padx=5) # 프레임 왼쪽에 배치, 좌우 여백
+# 한태양 버튼 생성
+한태양_button = tk.Button(button_frame, text="한태양", width=10, command=lambda: show_image('한태양'))
+한태양_button.pack(side=tk.LEFT, padx=5) # 프레임 왼쪽에 배치, 좌우 여백
 
-# 멋쟁이햄스터 버튼 생성
-멋쟁이햄스터_button = tk.Button(button_frame, text="멋쟁이햄스터", width=10, command=lambda: show_image('멋쟁이햄스터'))
-멋쟁이햄스터_button.pack(side=tk.LEFT, padx=5) # 프레임 왼쪽에 배치, 좌우 여백
+# 나승엽 버튼 생성
+나승엽_button = tk.Button(button_frame, text="나승엽", width=10, command=lambda: show_image('나승엽'))
+나승엽_button.pack(side=tk.LEFT, padx=5) # 프레임 왼쪽에 배치, 좌우 여백
 
 # 이미지를 표시할 레이블 생성
 image_label = tk.Label(window, text="버튼을 클릭하여 동물을 선택하세요.", compound=tk.CENTER)
